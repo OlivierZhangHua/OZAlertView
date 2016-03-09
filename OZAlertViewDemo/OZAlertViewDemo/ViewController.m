@@ -25,8 +25,8 @@ static NSString *const btnTitle3 = @"btn3";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self createOZHorizontalAlertView];
-    //[self createOZVerticalAlertView];
+    //[self createOZHorizontalAlertView];
+    [self createOZVerticalAlertView];
     [self alertViewShow];
 }
 

@@ -35,9 +35,9 @@
     CGFloat buttonH = 61;
     CGFloat buttonW = 250;
     
-    // 通过数组长度创建view的高
+    // 通过数组设置创建view的高
     UIView *alert = [[UIView alloc] initWithFrame:CGRectMake(0, 0,buttonW, array.count*buttonH)];
-    // 切圆角
+    // 设置圆角
     alert.layer.masksToBounds = YES;
     alert.layer.cornerRadius = 10;
     alert.center = groundView.center;
@@ -121,7 +121,7 @@
     CGFloat buttonH = 61;
     CGFloat buttonW = 125;
     
-    CGFloat height = [OZHelper heightOfString:content font:[UIFont systemFontOfSize:15] width:2*buttonW - 20] + 20;
+    CGFloat height = [OZHelper heightOfString:content font:[UIFont systemFontOfSize:15] width:2*buttonW - 20] + 23;
     
     // 通过数组长度创建view的高
     CGFloat alertHeight = height > buttonH ? 2*buttonH + height - buttonH + 20 : 2*buttonH;
@@ -155,7 +155,7 @@
             contentLabel.backgroundColor = [UIColor whiteColor];
             [view addSubview:contentLabel];
             
-            view.frame = CGRectMake(0, 0, 2*buttonW, CGRectGetMaxY(contentLabel.frame)+3);
+            view.frame = CGRectMake(0, 0, 2*buttonW, CGRectGetMaxY(contentLabel.frame));
         }
         else
         {
